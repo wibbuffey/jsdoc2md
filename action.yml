@@ -1,0 +1,13 @@
+name: "jsdoc2md"
+description: "convert JSDoc files to markdown"
+inputs:
+  source:
+    description: "the path to the source file"
+    required: true
+    default: "./main.js"
+outputs:
+  result:
+    description: "the result of the operation"
+runs:
+  using: "node16"
+  main: "action.js"
