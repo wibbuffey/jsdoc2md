@@ -14,4 +14,4 @@ outputs:
     description: "the result of the operation"
 runs:
   using: "node12"
-  main: "script.js"
+  main: "main.cjs"
