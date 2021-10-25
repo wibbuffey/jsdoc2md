@@ -5,7 +5,7 @@ const fs = require("fs");
 try {
   const source = core.getInput("source");
   const output = core.getInput("output");
-  const result = jsdoc2md.render({ files: source });
+  const result = jsdoc2md.renderSync({ files: source });
 
   core.setOutput("result", result);
   fs.writeFileSync(output, result);
