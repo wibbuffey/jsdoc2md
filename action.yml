@@ -5,6 +5,10 @@ inputs:
     description: "the path to the source file"
     required: true
     default: "./main.js"
+  output:
+    description: "where to write the result"
+    required: true
+    default: "./main.md"
 outputs:
   result:
     description: "the result of the operation"
